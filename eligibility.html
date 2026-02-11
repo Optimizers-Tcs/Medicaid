@@ -82,21 +82,24 @@ h1{
 
     <div class="embed-card">
 
-        <!-- Pega Web Embed Script -->
-        <script src="https://tcs14.pegalabs.io/prweb/PRRestService/c11nsvc/v1/pega-embed.js"></script>
+       <!-- Pega Web Embed Script -->
+<script src="https://tcs14.pegalabs.io/prweb/PRRestService/c11nsvc/v1/pega-embed.js"></script>
 
-        <!-- Pega Web Embed Component -->
-        <pega-embed
-            id="theEmbed"
-            action="createCase"
-            caseTypeID="Govt-Medicaid-Work-WorkHoursTracking"
-            themeID="pzBootesDark"
-            casePage="simplifiedAssignment"
-            appAlias="medicaid-eligibility---work-requirements"
-            pegaServerUrl="https://tcs14.pegalabs.io/prweb/"
-            grantType="none"
-            style="width:100%; min-height:600px;">
-        </pega-embed>
+<!-- Pega Web Embed Component -->
+<pega-embed
+    id="theEmbed"
+    action="createCase"
+    caseTypeID="Govt-Medicaid-Work-WorkHoursTracking"
+    themeID="pzBootesDark"
+    casePage="simplifiedAssignment"
+    appAlias="medicaid-eligibility---work-requirements"
+    pegaServerUrl="https://tcs14.pegalabs.io/prweb/"
+    autoReauth="true"
+    authService="pega"
+    clientId="13483413596680317518"
+    style="width:100%; min-height:700px;">
+</pega-embed>
+
 
     </div>
 </div>
@@ -104,3 +107,4 @@ h1{
 
 </body>
 </html>
+
