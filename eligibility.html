@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medicaid Eligibility</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Top Bar */
+.top-bar{
+    background:#f4f4f4;
+    padding:8px 40px;
+    font-size:14px;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#0096a6;
+}
+
+.nav-links a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+/* Page Content */
+.content{
+    padding:60px;
+}
+
+h1{
+    color:#0096a6;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Same Header -->
+<div class="top-bar">
+    <div>📞 1-800-MEDICAID | ✉ support@medicaid.gov</div>
+    <div>Follow us</div>
+</div>
+
+<div class="navbar">
+    <div class="logo">MEDICAID</div>
+    <div class="nav-links">
+        <a href="medicaid.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="eligibility.html">Eligibility</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- Page Body -->
+<div class="page-container">
+    <div class="page-title">Check Medicaid Eligibility</div>
+    <div class="page-subtitle">
+        Complete the form below to check your Medicaid work requirements eligibility.
+    </div>
+
+    <div class="embed-card">
+
+        <!-- Pega Web Embed Script -->
+        <script src="https://tcs14.pegalabs.io/prweb/PRRestService/c11nsvc/v1/pega-embed.js"></script>
+
+        <!-- Pega Web Embed Component -->
+        <pega-embed
+            id="theEmbed"
+            action="createCase"
+            caseTypeID="Govt-Medicaid-Work-WorkHoursTracking"
+            themeID="pzBootesDark"
+            casePage="simplifiedAssignment"
+            appAlias="medicaid-eligibility---work-requirements"
+            pegaServerUrl="https://tcs14.pegalabs.io/prweb/"
+            grantType="none"
+            style="width:100%; min-height:600px;">
+        </pega-embed>
+
+    </div>
+</div>
+
+
+</body>
+</html>
